@@ -23,5 +23,5 @@ jobs:
           pip install "pandas matplotlib seaborn"
 
       - name: Run Python Script
-        run: python your_script.py
+        run: python PandasScript.py
 
