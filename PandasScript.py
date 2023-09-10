@@ -4,6 +4,7 @@ import io
 import pdfkit
 import markdown
 import matplotlib.pyplot as plt
+import tabulate
 
 # Step 2: Read a dataset CSV
 import seaborn as sns
