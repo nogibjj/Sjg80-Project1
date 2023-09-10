@@ -1,17 +1,19 @@
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
-from sklearn.datasets import load_iris
 
-# Load the Iris dataset
-iris = load_iris()
-df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
+# Step 2: Read a dataset from a built-in library (e.g., Seaborn)
+import seaborn as sns
+iris = sns.load_dataset('iris')
 
-# Generate summary statistics
-summary_stats = df.describe()
+# Step 3: Generate summary statistics
+summary_statistics = iris.describe()
 
-# Create a data visualization
-sns.pairplot(df, hue=iris.target_names[iris.target])
+# Step 4: Create a data visualization (e.g., histogram)
+sns.histplot(iris['sepal_length'], kde=True)
+plt.title('Distribution of Sepal Length')
+plt.xlabel('Sepal Length')
+plt.ylabel('Frequency')
 plt.show()
 
-print(summary_stats)
+# Save summary statistics to a CSV file (optional)
+summary_statistics.to_csv('summary_statistics.csv', index=False)
