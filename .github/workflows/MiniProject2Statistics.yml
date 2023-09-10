@@ -1,0 +1,26 @@
+name: Descriptive Statistics and Visualization
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  analyze-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install Dependencies
+        run: |
+          pip install pandas matplotlib seaborn
+
+      - name: Run Python Script
+        run: python your_script.py
