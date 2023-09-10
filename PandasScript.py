@@ -1,10 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Step 2: Read a dataset from a built-in library (Seaborn)
+# Step 2: Read a dataset CSV
 import seaborn as sns
-
-#iris = sns.load_dataset("iris")
 iris = pd.read_csv("iris.csv")
 
 # Step 3: Generate summary statistics
