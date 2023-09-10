@@ -20,7 +20,8 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install pandas matplotlib seaborn
+          pip install "pandas matplotlib seaborn"
 
       - name: Run Python Script
         run: python your_script.py
+
