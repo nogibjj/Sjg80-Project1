@@ -21,17 +21,13 @@ plt.show()
 # Save summary statistics to a CSV file
 summary_statistics.to_csv("summary_statistics.csv", index=False)
 
-# Create a PDF file
-pdf = pdfkit.PDF()
+# Convert summary statistics to Markdown string
+markdown_string = markdown.markdown(summary_statistics.to_markdown())
 
-# Write the summary statistics to the PDF file
-with io.open('summary_statistics.pdf', 'w', encoding='utf-8') as f:
-    pdf.write(f, orientation='landscape')
+# Save Markdown string to PDF file
+with open('iris_summary_statistics.pdf', 'w') as f:
+  f.write(markdown_string)
 
-# Create a Markdown file
-markdown = "## Summary Statistics"
-markdown += iris.describe().to_markdown()
-
-# Write the summary statistics to the Markdown file
-with open('summary_statistics.md', 'w') as f:
-    f.write(markdown)
+# Save Markdown string to Markdown file
+with open('iris_summary_statistics.md', 'w') as f:
+  f.write(markdown_string)
