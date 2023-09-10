@@ -2,6 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import io
 import pdfkit
+import markdown
+import matplotlib.pyplot as plt
 
 # Step 2: Read a dataset CSV
 import seaborn as sns
