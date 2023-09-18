@@ -1,4 +1,4 @@
-# Sjg80-Mini-Project2
+# Sjg80-Mini-Project3 Using Polars
 This is an example project for Python using GitHub CodeSpaces
 
 DATASET
