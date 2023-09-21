@@ -5,7 +5,7 @@ seaborn
 pdfkit
 markdown
 tabulate
-nbqa
+nbval==0.10.0
 
 #Devops
 black==22.3.0
