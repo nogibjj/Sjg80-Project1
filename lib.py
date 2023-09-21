@@ -36,3 +36,5 @@ def boxplot_of_cols(df_wanted=None, col1=None, col2=None, col3=None, file_name=N
     plt.savefig("boxplot")
     
     plt.show()
+
+if __name__ == "__main__":
