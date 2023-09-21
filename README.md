@@ -1,4 +1,5 @@
-# Sjg80-Mini-Project3 Using Polars
+# Sjg80-Continuous Integration using GitHub Actions of Python Data Science Project
+
 This is an example project for Python using GitHub CodeSpaces
 
 ## DATASET
