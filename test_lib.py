@@ -6,8 +6,6 @@ import numpy as np
 from lib import calc_desc_stat
 from lib import boxplot_of_cols
 
-
-
 def calc_desc_stat(dataset_col):
     if dataset_col is None: 
         return "Please input a dataframe column"
