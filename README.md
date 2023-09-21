@@ -21,22 +21,20 @@ This code is performing data analysis and visualization on the Iris dataset usin
 
 Statistics performed in Iris Notebook:
 
-Descriptive statistics: The mean, median, mode, standard deviation, and range are calculated for each of the four features of the Iris dataset: sepal length, sepal width, petal length, and petal width.
-Visualization: The Iris dataset is visualized using scatter plots and histograms.
-Correlation analysis: The correlation coefficient is calculated between each pair of features in the Iris dataset.
-Principal component analysis (PCA): PCA is used to reduce the dimensionality of the Iris dataset to two principal components.
-Classification: The Iris dataset is classified into three species (Iris setosa, Iris versicolor, and Iris virginica) using a support vector machine (SVM) classifier.
-README text:
+- Descriptive statistics: The mean, median, mode, standard deviation, and range are calculated for each of the four features of the Iris dataset: sepal length, sepal width, petal length, and petal width.
+- Visualization: The Iris dataset is visualized using scatter plots and histograms.
+- Correlation analysis: The correlation coefficient is calculated between each pair of features in the Iris dataset.
+- Principal component analysis (PCA): PCA is used to reduce the dimensionality of the Iris dataset to two principal components.
+- Classification: The Iris dataset is classified into three species (Iris setosa, Iris versicolor, and Iris virginica) using a support vector machine (SVM) classifier.
 
 Iris Notebook
 
-This tutorial provides an introduction to the statistics that are performed in the Iris dataset. The Iris dataset is a popular machine learning dataset that contains data on four features of the Iris flower: sepal length, sepal width, petal length, and petal width. The dataset is labeled with three species of Iris flower: Iris setosa, Iris versicolor, and Iris virginica.
-
 The following statistics are performed:
 
-Descriptive statistics: The mean, median, mode, standard deviation, and range are calculated for each of the four features of the Iris dataset. This information can be used to understand the distribution of each feature.
-Visualization: The Iris dataset is visualized using scatter plots and histograms. Scatter plots can be used to identify relationships between pairs of features. Histograms can be used to visualize the distribution of each feature.
-Correlation analysis: The correlation coefficient is calculated between each pair of features in the Iris dataset. The correlation coefficient is a measure of the linear relationship between two variables.
-Principal component analysis (PCA): PCA is used to reduce the dimensionality of the Iris dataset to two principal components. PCA is a technique that can be used to identify the most important features in a dataset.
-Classification: The Iris dataset is classified into three species (Iris setosa, Iris versicolor, and Iris virginica) using a support vector machine (SVM) classifier. SVM is a machine learning algorithm that can be used to classify data points into different categories.
+- Descriptive statistics: The mean, median, mode, standard deviation, and range are calculated for each of the four features of the Iris dataset. This information can be used to understand the distribution of each feature.
+- Visualization: The Iris dataset is visualized using scatter plots and histograms. Scatter plots can be used to identify relationships between pairs of features. Histograms can be used to visualize the distribution of each feature.
+- Correlation analysis: The correlation coefficient is calculated between each pair of features in the Iris dataset. The correlation coefficient is a measure of the linear relationship between two variables.
+- Principal component analysis (PCA): PCA is used to reduce the dimensionality of the Iris dataset to two principal components. PCA is a technique that can be used to identify the most important features in a dataset.
+- Classification: The Iris dataset is classified into three species (Iris setosa, Iris versicolor, and Iris virginica) using a support vector machine (SVM) classifier. SVM is a machine learning algorithm that can be used to classify data points into different categories.
+  
 The results of these statistics can be used to understand the characteristics of the Iris dataset and to develop machine learning models to classify Iris flowers.
