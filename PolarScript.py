@@ -14,5 +14,4 @@ def boxplot_of_col(col):
     plt.savefig("boxplot.png")
 
 boxplot_of_col(df1['petal.length'])
-if __name__ == "__main__":
-    print(calc_desc_stat(df1['petal.length']))
+
