@@ -11,11 +11,7 @@ This code is performing data analysis and visualization on the Iris dataset usin
 ## POLARS
 This code reads the Iris dataset using Polars, defines functions for calculating descriptive statistics and creating boxplots, and then applies these functions to the 'petal.length' column of the dataset while also printing the descriptive statistics. Additionally, it saves the boxplot as an image file.
 This code is performing data analysis and visualization on the Iris dataset using the Polars library for data manipulation and Pandas-like operations along with Matplotlib for creating visualizations.
-
 ![image](https://github.com/nogibjj/Sjg80-Mini-Project3Polars/blob/364e91212a91c596e07fe15e4e8812072163458f/sphx_glr_plot_iris_dataset.png)
-
-
-[![CI](https://github.com/nogibjj/Sjg80-Mini-Project2/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/Sjg80-Mini-Project2/actions/workflows/main.yml)
 
 # JUPYTER NOTEBOOK
 
@@ -38,3 +34,7 @@ The following statistics are performed:
 - Classification: The Iris dataset is classified into three species (Iris setosa, Iris versicolor, and Iris virginica) using a support vector machine (SVM) classifier. SVM is a machine learning algorithm that can be used to classify data points into different categories.
   
 The results of these statistics can be used to understand the characteristics of the Iris dataset and to develop machine learning models to classify Iris flowers.
+
+
+[![Polars](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/main.yml)
+[![Descriptive Statistics and Visualization](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/MiniProject2Statistics.yml/badge.svg)](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/MiniProject2Statistics.yml)
