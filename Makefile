@@ -7,20 +7,11 @@ test:
 	python -m pytest --nbval-lax *.ipynb
 
 format:	
-	black *.py 
-	#nbqa black *.ipynb
+	black src/*.py
+	nbqa black src/*.ipynb
 
 lint:
-	#pylint --disable=R,C --ignore-patterns=test_.*?py *.py mylib/*.py
 	nbqa ruff *.ipynb
 	ruff check *.py 
-
-container-lint:
-	docker run --rm -i hadolint/hadolint < Dockerfile
-
-refactor: format lint
-
-deploy:
-	#deploy goes here
 		
 all: install lint test format deploy
