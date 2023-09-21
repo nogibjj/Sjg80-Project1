@@ -8,7 +8,7 @@ test:
 
 format:	
 	black *.py 
-	nbqa black *.ipynb
+	#nbqa black *.ipynb
 
 lint:
 	pylint --disable=R,C --ignore-patterns=test_.*?py *.py mylib/*.py
