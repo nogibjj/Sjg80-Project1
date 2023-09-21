@@ -38,3 +38,4 @@ The results of these statistics can be used to understand the characteristics of
 
 [![Polars](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/main.yml)
 [![Descriptive Statistics and Visualization](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/MiniProject2Statistics.yml/badge.svg)](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/MiniProject2Statistics.yml)
+[![OnInstall](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/install.yml)
