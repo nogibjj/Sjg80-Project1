@@ -6,6 +6,7 @@ pdfkit
 markdown
 tabulate
 nbval==0.10.0
+nbqa==1.7.0
 
 #Devops
 black==22.3.0
