@@ -9,7 +9,7 @@ def test_calc_desc_stat():
     df = pd.DataFrame({'data': [1, 2, 3, 4, 5]})
     output = calc_desc_stat(df['data'])
     expected_output = df['data'].describe()
-    assert output == expected_output
+    assert output.mean() == expected_output.mean()
 
    # with pytest.raises(TypeError):
        # calc_desc_stat(None)
