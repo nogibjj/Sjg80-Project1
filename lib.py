@@ -38,3 +38,5 @@ def boxplot_of_cols(df_wanted=None, col1=None, col2=None, col3=None, file_name=N
     plt.show()
 
 if __name__ == "__main__":
+    data = pd.read_csv("data/iris_data.csv")
+    print("TEXT")
