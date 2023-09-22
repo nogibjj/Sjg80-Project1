@@ -1,5 +1,4 @@
 import pandas as pd
-import pytest
 import matplotlib.pyplot as plt
 from lib import calc_desc_stat
 from lib import boxplot_of_cols
