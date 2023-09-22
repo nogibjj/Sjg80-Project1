@@ -1,3 +1,4 @@
+"We will use pytest to test our functions from lib.py"
 import pandas as pd
 import matplotlib.pyplot as plt
 from lib import calc_desc_stat
