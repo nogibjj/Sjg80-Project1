@@ -65,6 +65,6 @@ def test_boxplot_of_cols(
     # Check if the boxplot was saved correctly
     assert plt.imread('boxplot.png').shape == (400, 600)
 
-  if __name__ == '__main__':
-        test_calc_desc_stat()
-        test_boxplot_of_cols()
+if __name__ == '__main__':
+    test_calc_desc_stat()
+    test_boxplot_of_cols()
