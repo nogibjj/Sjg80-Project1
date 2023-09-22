@@ -30,7 +30,7 @@ def test_boxplot_of_cols():
        # boxplot_of_cols(df, col1=None, col2=None, col3=None)
 
     # Check if the boxplot was saved correctly
-    assert plt.imread('boxplot.png').shape == (400, 600)
+    assert plt.imread('boxplot.png').shape == (480, 640, 4) 
 
 if __name__ == '__main__':
     test_calc_desc_stat()
