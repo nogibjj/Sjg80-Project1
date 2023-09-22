@@ -6,13 +6,24 @@ import numpy as np
 from lib import calc_desc_stat
 from lib import boxplot_of_cols
 
-def calc_desc_stat(dataset_col):
+def test_calc_desc_stat(dataset_col):
+    
+    df = pd.DataFrame({'data': [1, 2, 3, 4, 5]})
+
     if dataset_col is None: 
         return "Please input a dataframe column"
     out=dataset_col.describe()
     return out
 
-def boxplot_of_cols(df_wanted=None, col1=None, col2=None, col3=None, file_name=None):
+    output = calc_desc_stat(df['data'])
+    expected_output = df['data'].describe()
+
+    assert output == expected_output
+
+    with pytest.raises(TypeError):
+        calc_desc_stat(None)
+
+def test_boxplot_of_cols(df_wanted=None, col1=None, col2=None, col3=None, file_name=None):
     
     if isinstance(df_wanted, pd.DataFrame):
         print("good to go")
@@ -41,6 +52,26 @@ def boxplot_of_cols(df_wanted=None, col1=None, col2=None, col3=None, file_name=N
     
     plt.show()
 
+        # Create a DataFrame with some data
+    df = pd.DataFrame({'data1': [1, 2, 3, 4, 5], 'data2': [6, 7, 8, 9, 10]})
+
+    # Test with a valid input
+    test_boxplot_of_cols(df, col1='data1', col2='data2', file_name='boxplot.png')
+
+    # Test with an invalid input
+    with pytest.raises(TypeError):
+        test_boxplot_of_cols(None)
+
+    # Test with a DataFrame that has no columns to plot
+    with pytest.raises(SystemExit):
+        test_boxplot_of_cols(df, col1=None, col2=None, col3=None)
+
+    # Check if the boxplot was saved correctly
+    assert plt.imread('boxplot.png').shape == (400, 600)
+
+    # Remove the boxplot file
+    os.remove('boxplot.png')
+
   if __name__ == '__main__':
-        calc_desc_stat()
-        boxplot_of_cols()
+        test_calc_desc_stat()
+        test_boxplot_of_cols()
