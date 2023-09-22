@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from lib import calc_desc_stat
 from lib import boxplot_of_cols
 
-def test_calc_desc_stat(dataset_col):
+def test_calc_desc_stat():
     
     df = pd.DataFrame({'data': [1, 2, 3, 4, 5]})
     if dataset_col is None: 
