@@ -20,7 +20,9 @@ def test_calc_desc_stat(dataset_col):
     with pytest.raises(TypeError):
         calc_desc_stat(None)
 
-def test_boxplot_of_cols(df_wanted=None, col1=None, col2=None, col3=None, file_name=None):
+def test_boxplot_of_cols(
+        df_wanted=None, col1=None, col2=None, col3=None, file_name=None
+):
     
     if isinstance(df_wanted, pd.DataFrame):
         print("good to go")
@@ -62,9 +64,6 @@ def test_boxplot_of_cols(df_wanted=None, col1=None, col2=None, col3=None, file_n
 
     # Check if the boxplot was saved correctly
     assert plt.imread('boxplot.png').shape == (400, 600)
-
-    # Remove the boxplot file
-    os.remove('boxplot.png')
 
   if __name__ == '__main__':
         test_calc_desc_stat()
