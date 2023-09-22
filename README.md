@@ -37,6 +37,7 @@ The following statistics are performed:
 The results of these statistics can be used to understand the characteristics of the Iris dataset and to develop machine learning models to classify Iris flowers.
 
 
-[![Polars](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/main.yml)
-[![Descriptive Statistics and Visualization](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/MiniProject2Statistics.yml/badge.svg)](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/MiniProject2Statistics.yml)
+[![Test](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/test.yml)
 [![OnInstall](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/install.yml)
+[![Lint](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/lint.yml)
+[![Format](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/Sjg80-Project1/actions/workflows/format.yml)
