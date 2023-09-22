@@ -1,10 +1,9 @@
 import pandas as pd 
 import matplotlib.pyplot as plt
 
-
 def calc_desc_stat(dataset_col):
-    if dataset_col is None: 
-        return "Please input a dataframe column"
+   # if dataset_col is None: 
+        #return "Please input a dataframe column"
     out=dataset_col.describe()
     return out
 
