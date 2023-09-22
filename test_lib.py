@@ -2,14 +2,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap, Normalize
 import numpy as np
-
 from lib import calc_desc_stat
 from lib import boxplot_of_cols
 
 def test_calc_desc_stat(dataset_col):
     
     df = pd.DataFrame({'data': [1, 2, 3, 4, 5]})
-
     if dataset_col is None: 
         return "Please input a dataframe column"
     out=dataset_col.describe()
@@ -40,31 +38,28 @@ def test_boxplot_of_cols(df_wanted=None, col1=None, col2=None, col3=None, file_n
         print("There are no columns to plot")
         return
     
-    df_to_plot = df_wanted[list_of_columns]
-    
+    df_to_plot = df_wanted[list_of_columns]  
     df_to_plot.boxplot()
     
     if file_name:
-        plt.savefig(file_name)
-    
+        plt.savefig(file_name)  
     # Save the figure before showing it
     plt.savefig("boxplot")
-    
     plt.show()
-
-        # Create a DataFrame with some data
+    
+    # Create a DataFrame with some data
     df = pd.DataFrame({'data1': [1, 2, 3, 4, 5], 'data2': [6, 7, 8, 9, 10]})
 
     # Test with a valid input
-    test_boxplot_of_cols(df, col1='data1', col2='data2', file_name='boxplot.png')
+    boxplot_of_cols(df, col1='data1', col2='data2', file_name='boxplot.png')
 
     # Test with an invalid input
     with pytest.raises(TypeError):
-        test_boxplot_of_cols(None)
+        boxplot_of_cols(None)
 
     # Test with a DataFrame that has no columns to plot
     with pytest.raises(SystemExit):
-        test_boxplot_of_cols(df, col1=None, col2=None, col3=None)
+        boxplot_of_cols(df, col1=None, col2=None, col3=None)
 
     # Check if the boxplot was saved correctly
     assert plt.imread('boxplot.png').shape == (400, 600)
